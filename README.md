@@ -14,7 +14,7 @@ The sensor used is a Bosch BME280. BME280 is a sophisticated sensor that very ac
 
 ## Wiring
 
-The solar panel used delivers a maximum of 200ma @ 5.5v.
+The solar panel used delivers a maximum of ~180ma @ 5.5v. When booting up and reading sensor data, the ESP module needs around 80ma, however when in deep sleep (RTC only), only ~20μa are needed. The module could also be powered using AA batteries for months.
 
 The battery is charged from a Solar panel through a TP4056 charging module. The TP4056 module comes with battery protection chip or without the protection chip.
 
@@ -22,6 +22,12 @@ The TP4056 module is perfect for charging single cell 3.7V 1 Ah or higher LiPo c
 
 <img src="https://i.ibb.co/zn3ksDY/F7-LCJXJJ20-PCE1-T-LARGE.jpg" />
 
+## What it does
+
+- the station wakes up from deep sleep every 10 minutes
+- it connects to wifi
+- reads the data from the BME280 sensor
+- uploads data to a remote database
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -29,4 +35,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## License
-[APACHE](https://www.apache.org/licenses/LICENSE-2.0)
+[MIT](https://choosealicense.com/licenses/mit/)
