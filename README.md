@@ -29,6 +29,10 @@ The TP4056 module is perfect for charging single cell 3.7V 1 Ah or higher LiPo c
 - reads the data from the BME280 sensor
 - uploads data to a remote database
 
+## What can be improved
+
+A DIY anemometer based on hall sensors (magnetic field detection) is to be added, along with a capacitive rain sensor.
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
